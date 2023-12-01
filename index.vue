@@ -39,7 +39,7 @@ marked.use({
     gfm: true,
     breaks: true,
     silent: true,
-    extensions: [emoji], 
+    //extensions: [emoji], 
     //extensions: [descriptionList, description]
     //smartypants: true,
 });//.use({ );
@@ -79,7 +79,7 @@ export default {
     }
   },
   methods: {
-    MDtoHTML
+    marked
   }
 };
 </script>
