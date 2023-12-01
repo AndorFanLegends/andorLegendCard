@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/dchansel/andorLegendCard#readme",
   "dependencies": {
-    "marked": "^5.1.2"
+    "marked": "^7.0.5"
   },
   "devDependencies": {}
 }
