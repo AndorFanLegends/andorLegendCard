@@ -8,16 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mdunisch/andor-legendenkarte.git"
+    "url": "git+https://github.com/dchansel/andorLegendCard.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mdunisch/andor-legendenkarte/issues"
+    "url": "https://github.com/dchansel/andorLegendCard/issues"
   },
-  "homepage": "https://github.com/mdunisch/andor-legendenkarte#readme",
+  "homepage": "https://github.com/dchansel/andorLegendCard#readme",
   "dependencies": {
-    "marked": "^4.1.0"
+    "marked": "^5.1.2"
   },
   "devDependencies": {}
 }
