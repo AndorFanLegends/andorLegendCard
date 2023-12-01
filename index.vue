@@ -23,22 +23,33 @@
         <div>Révélez cette carte dès que le Narrateur atteint cette case sur la Piste des Légendes.</div>
       </div>
     </div>
-    <div class="right" v-html="MDtoHTML(cardData.text || '')" v-if="(cardData.type !== 'end')"></div>
+    <div class="right" v-html="marked(cardData.text || '')" v-if="(cardData.type !== 'end')"></div>
     <div class="right end" v-else>
-      <div class="success" v-html="MDtoHTML(cardData.success || '')"></div>
-      <div class="failure" v-html="MDtoHTML(cardData.failure || '')"></div>
+      <div class="success" v-html="marked(cardData.success || '')"></div>
+      <div class="failure" v-html="marked(cardData.failure || '')"></div>
     </div>
   </div>
 </template>
 
 <script>
-import MDtoHTML from "marked";
+//import MDtoHTML from "marked";
+import { marked } from 'marked';
 
-MDtoHTML.setOptions({
+marked.use({
+    gfm: true,
+    breaks: true,
+    silent: true,
+    extensions: [emoji], 
+    //extensions: [descriptionList, description]
+    //smartypants: true,
+});//.use({ );
+//marked.use({ extensions: [emoji] });
+
+/*MDtoHTML.setOptions({
   sanitize: true,
   breaks: true,
   gfm: true
-});
+});*/
 
 export default {
   props: {
