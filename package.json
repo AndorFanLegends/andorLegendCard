@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/mdunisch/andor-legendenkarte#readme",
   "dependencies": {
-    "marked": "^0.7.0"
+    "marked": "^4.1.0"
   },
   "devDependencies": {}
 }
