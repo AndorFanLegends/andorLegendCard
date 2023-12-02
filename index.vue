@@ -91,7 +91,7 @@ export default {
 }
 
 .left {
-  background-image: url("./asserts/mini/left_ohne.png");
+  background-image: url("./assets/mini/left_ohne.png");
   background-size: cover;
   height: 100%;
   width: 50%;
@@ -100,11 +100,11 @@ export default {
 }
 
 .left_letter {
-  background-image: url("./asserts/mini/left_mit.png");
+  background-image: url("./assets/mini/left_mit.png");
 }
 
 .right {
-  background-image: url("./asserts/mini/right.png");
+  background-image: url("./assets/mini/right.png");
   background-size: cover;
   height: calc(100% - 10px);
   overflow: hidden;
@@ -175,7 +175,7 @@ export default {
   top: 330px;
 }
 .card .putcard .arrow {
-  background-image: url("./asserts/mini/arrow.png");
+  background-image: url("./assets/mini/arrow.png");
   width: 49px;
   height: 88px;
   float: left;
@@ -280,24 +280,24 @@ export default {
 }
 
 .card.print >>> .left {
-  background-image: url("./asserts/full/left_ohne.png");
+  background-image: url("./assets/full/left_ohne.png");
   border: 1px dashed black;
   border-right: none;
   left: -1px;
 }
 
 .card.print >>> .left_letter {
-  background-image: url("./asserts/full/left_mit.png");
+  background-image: url("./assets/full/left_mit.png");
 }
 
 .card.print >>> .right {
-  background-image: url("./asserts/full/right.png");
+  background-image: url("./assets/full/right.png");
   border: 1px dashed black;
   border-left: none;
 }
 
 .card.print >>> .card .putcard .arrow {
-  background-image: url("./asserts/full/arrow.png");
+  background-image: url("./assets/full/arrow.png");
 }
 
 /* Ansicht für die App */
