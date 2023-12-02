@@ -78,7 +78,7 @@ const defaultOptions = {
           if (token.unicode) {
             return token.emoji;
           } else {
-            return `<img alt="${token.name}" src="${token.emoji}" class="marked-emoji-img ${token.name}">`;
+            return `<img alt="${token.name}" src="${token.emoji}" class="marked-andor-img ${token.name}">`;
           }
         }
       }]
