@@ -32,24 +32,15 @@
 </template>
 
 <script>
-//import MDtoHTML from "marked";
 import { marked } from 'marked';
+import {markedAndor} from "marked-andor";
 
 marked.use({
     gfm: true,
     breaks: true,
     silent: true,
-    //extensions: [emoji], 
-    //extensions: [descriptionList, description]
-    //smartypants: true,
-});//.use({ );
-//marked.use({ extensions: [emoji] });
-
-/*MDtoHTML.setOptions({
-  sanitize: true,
-  breaks: true,
-  gfm: true
-});*/
+});
+marked.use(markedAndor());
 
 export default {
   props: {
@@ -237,6 +228,23 @@ export default {
 
 .card >>> li {
   padding: 2px 0;
+}
+
+.card >>> .marked-andor-img {
+  height: 18px;
+  vertical-align: sub;
+}
+
+.card >>> blockquote {
+  border-radius : 5px;
+  border: 1px solid #000000;
+  margin: 5px 0 0;
+  background: rgb(252,224,135);
+  background: linear-gradient(180deg, rgba(252,224,135,1) 0%, rgba(253,247,214,1) 100%);
+  padding: 5px;
+}
+.card >>> blockquote p {
+  margin:0px;
 }
 
 .right.end {
