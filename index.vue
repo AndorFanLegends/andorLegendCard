@@ -33,7 +33,7 @@
 
 <script>
 import { marked } from 'marked';
-import {markedAndor} from "marked-andor";
+import {markedAndor} from "./markedAndor";
 
 marked.use({
     gfm: true,

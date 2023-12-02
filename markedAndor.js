@@ -30,9 +30,9 @@ const defaultOptions = {
       ...options
     };
   
-    if (!options.emojis) {
+    /*if (!options.emojis) {
       throw new Error('Must provide emojis to markedEmoji');
-    }
+    }*/
   
     const emojiNames = Object.keys(options.emojis).map(e => e.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
     const emojiRegex = new RegExp(`:(${emojiNames}):`);
