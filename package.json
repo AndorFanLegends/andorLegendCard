@@ -1,5 +1,5 @@
 {
-  "name": "andor-legendenkarte",
+  "name": "andorLgendCard",
   "version": "1.0.0",
   "description": "",
   "main": "index.vue",
@@ -17,8 +17,7 @@
   },
   "homepage": "https://github.com/dchansel/andorLegendCard#readme",
   "dependencies": {
-    "marked": "^9.1.6",
-    "marked-emoji": "github:UziTech/marked-emoji"
+    "marked": "^9.1.6"
   },
   "devDependencies": {}
 }
