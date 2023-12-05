@@ -218,7 +218,7 @@ export default {
 }
 
 .card >>> ul {
-  padding-left: 2rem;
+  padding-left: 1.1rem;
   margin: 0;
 }
 
