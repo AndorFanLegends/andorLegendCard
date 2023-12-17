@@ -262,6 +262,9 @@ export default {
   margin-top: 5px;
   background: #a4d1e9;
   border: 2px solid #616b7f;
+  background-image: url("./assets/N-blue.jpg");
+  background-size: cover;
+  background-position-y: bottom;
 }
 
 .right.end :deep(.failure) {
@@ -269,6 +272,9 @@ export default {
   border: 2px solid #7e4a26;
   transform: rotate(180deg);
   margin-bottom: 5px;
+  background-image: url("./assets/N-red.jpg");
+  background-size: cover;
+  background-position-y: bottom;
 }
 
 /* Ansicht für print css */
