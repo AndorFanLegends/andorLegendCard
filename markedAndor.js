@@ -1,4 +1,4 @@
-const emojis = {
+/*const emojis = {
     "2P": require('./assets/2P.png'),
     "3P": require('./assets/3P.png'),
     "4P": require('./assets/4P.png'),
@@ -23,17 +23,35 @@ const defaultOptions = {
     // emojis: {}, required
     unicode: false
   };
-  
+*/  
   export function markedAndor(options) {
-    options = {
+    /*options = {
       ...defaultOptions,
       ...options
-    };
+    };*/
   
+    options = {
+      unicode: false,
+      emojis: {
+        "2P": require('./assets/2P.png'),
+        "3P": require('./assets/3P.png'),
+        "4P": require('./assets/4P.png'),
+        "D1": require('./assets/D1.png'),
+        "D2": require('./assets/D2.png'),
+        "D3": require('./assets/D3.png'),
+        "D4": require('./assets/D4.png'),
+        "D5": require('./assets/D5.png'),
+        "D6": require('./assets/D6.png'),
+        "DN6": require('./assets/DN6.png'),
+        "DN8": require('./assets/DN8.png'),
+        "DN10": require('./assets/DN10.png'),
+        "DN12": require('./assets/DN12.png'),
+      }
+    };
     /*if (!options.emojis) {
       throw new Error('Must provide emojis to markedEmoji');
     }*/
-  
+
     const emojiNames = Object.keys(options.emojis).map(e => e.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|');
     const emojiRegex = new RegExp(`:(${emojiNames}):`);
     const tokenizerRule = new RegExp(`^${emojiRegex.source}`);
