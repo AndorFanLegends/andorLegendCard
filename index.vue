@@ -1,11 +1,11 @@
 <template>
   <div class="card" :class="{ 'print': cardType === 'print', 'app': cardType === 'app' }">
     <div class="left" :class="{ 'left_letter': cardData.type === 'letter' || cardData.type === 'end' }" v-if="!(cardType === 'app')">
-      <div class="left_number">{{ number }}</div>
-      <div class="right_number">{{ number }}</div>
+      <!--<div class="left_number">{{ number }}</div>
+      <div class="right_number">{{ number }}</div>-->
       <div class="legend">
-        <div v-if="(type === 'series')" class="series">{{ series }}<br /><span>{{ number }}</span></div>
-        <div class="name">{{ name }}</div>
+        <div v-if="(type === 'series')" class="series">{{ series }}</div>
+        <div class="name"> <span v-if="(type === 'series')">{{ number }} - </span> {{ name }}</div>
       </div>
       <div v-if="(cardData.type === 'letter' || cardData.type === 'end')" class="number"
       :class="{ 'single' : cardData.name.length === 1 }"
@@ -204,7 +204,7 @@ export default {
   margin-left: -20px;
 }
 
-.card >>> hr {
+.card :deep(hr) {
   overflow: visible;
   padding: 0;
   border: none;
@@ -213,29 +213,29 @@ export default {
   padding-top: 1px;
 }
 
-.card >>> p {
+.card :deep(p) {
   margin: 10px 0;
 }
 
-.card >>> ul {
+.card :deep(ul) {
   padding-left: 1.1rem;
   margin: 0;
 }
 
-.card >>> ol {
+.card :deep(ol) {
   padding-left: 1rem;
 }
 
-.card >>> li {
+.card :deep(li) {
   padding: 2px 0;
 }
 
-.card >>> .marked-andor-img {
+.card :deep(.marked-andor-img) {
   height: 18px;
   vertical-align: sub;
 }
 
-.card >>> blockquote {
+.card :deep(blockquote) {
   border-radius : 5px;
   border: 1px solid #000000;
   margin: 5px 0 0;
@@ -243,7 +243,7 @@ export default {
   background: linear-gradient(180deg, rgba(252,224,135,1) 0%, rgba(253,247,214,1) 100%);
   padding: 5px;
 }
-.card >>> blockquote p {
+.card :deep(blockquote p) {
   margin:0px;
 }
 
@@ -252,19 +252,19 @@ export default {
   flex-direction: column;
 }
 
-.right.end >>> div {
+.right.end :deep(div) {
   flex-grow: 1;
   padding: 10px;
 }
 
-.right.end >>> .success {
+.right.end :deep(.success) {
   margin-bottom: 10px;
   margin-top: 5px;
   background: #a4d1e9;
   border: 2px solid #616b7f;
 }
 
-.right.end >>> .failure {
+.right.end :deep(.failure) {
   background: #e9bb91;
   border: 2px solid #7e4a26;
   transform: rotate(180deg);
@@ -279,24 +279,24 @@ export default {
   margin-bottom: 20px;
 }
 
-.card.print >>> .left {
+.card.print :deep(.left) {
   background-image: url("./assets/full/left_ohne.png");
   border: 1px dashed black;
   border-right: none;
   left: -1px;
 }
 
-.card.print >>> .left_letter {
+.card.print :deep(.left_letter) {
   background-image: url("./assets/full/left_mit.png");
 }
 
-.card.print >>> .right {
+.card.print :deep(.right) {
   background-image: url("./assets/full/right.png");
   border: 1px dashed black;
   border-left: none;
 }
 
-.card.print >>> .card .putcard .arrow {
+.card.print :deep(.card .putcard .arrow) {
   background-image: url("./assets/full/arrow.png");
 }
 
@@ -307,7 +307,7 @@ export default {
   height: 100%;
 }
 
-.card.app >>> .right {
+.card.app :deep(.right) {
   height: 100%;
   overflow: auto;
   font-size: 17px;
@@ -315,7 +315,7 @@ export default {
   padding-bottom: 20px;
 }
 
-.card.app >>> li {
+.card.app :deep(li) {
   padding: 10px 0;
 }
 </style>
