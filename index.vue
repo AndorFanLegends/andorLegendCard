@@ -15,7 +15,7 @@
       </div>
       <div v-if="(cardData.type === 'custom')" class="cardname">
         <div class="title">{{ cardData.name }}</div>
-        <div>{{ cardData.subname }}</div>
+        <div v-html="marked(cardData.subname)"></div>
       </div>
       <div v-if="(cardData.type === 'put')" class="putcard">
         <div class="arrow"></div>
@@ -323,5 +323,9 @@ export default {
 
 .card.app :deep(li) {
   padding: 10px 0;
+}
+
+.card.2P, .card.3P, .card.4P {
+  margin: 0 0 0 20px
 }
 </style>
