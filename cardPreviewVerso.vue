@@ -76,4 +76,109 @@ export default {
   font-size: 13px;
   line-height: 1em;
 }
+.card :deep(hr) {
+  overflow: visible;
+  padding: 0;
+  border: none;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  padding-top: 1px;
+}
+
+.card :deep(p) {
+  margin: 10px 0;
+}
+
+.card :deep(ul) {
+  padding-left: 1.1rem;
+  margin: 0;
+}
+
+.card :deep(ol) {
+  padding-left: 1rem;
+}
+
+.card :deep(li) {
+  padding: 2px 0;
+}
+
+.card :deep(.marked-andor-img) {
+  height: 18px;
+  vertical-align: sub;
+}
+
+.card :deep(blockquote) {
+  border-radius : 5px;
+  border: 1px solid #000000;
+  margin: 5px 0 0;
+  background: rgb(252,224,135);
+  background: linear-gradient(180deg, rgba(252,224,135,1) 0%, rgba(253,247,214,1) 100%);
+  padding: 5px;
+}
+.card :deep(blockquote p) {
+  margin:0px;
+}
+
+.right.end {
+  display: flex;
+  flex-direction: column;
+}
+
+.right.end :deep(div) {
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.right.end :deep(.success) {
+  margin-bottom: 10px;
+  margin-top: 5px;
+  background: #a4d1e9;
+  border: 2px solid #616b7f;
+  background-image: url("./assets/N-blue.jpg");
+  background-size: cover;
+  background-position-y: bottom;
+}
+
+.right.end :deep(.failure) {
+  background: #e9bb91;
+  border: 2px solid #7e4a26;
+  transform: rotate(180deg);
+  margin-bottom: 5px;
+  background-image: url("./assets/N-red.jpg");
+  background-size: cover;
+  background-position-y: bottom;
+}
+
+/* Ansicht für print css */
+
+.card.print {
+  padding: 25px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.card.print :deep(.left) {
+  background-image: url("./assets/full/left_ohne.png");
+  border: 1px dashed black;
+  border-right: none;
+  left: -1px;
+}
+
+.card.print :deep(.left_letter) {
+  background-image: url("./assets/full/left_mit.png");
+}
+
+.card.print :deep(.right) {
+  background-image: url("./assets/full/right.png");
+  border: 1px dashed black;
+  border-left: none;
+}
+
+.card.print :deep(.card .putcard .arrow) {
+  background-image: url("./assets/full/arrow.png");
+}
+
+.card.2P, .card.3P, .card.4P {
+  margin: 0 0 0 20px
+}
 </style>
