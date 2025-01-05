@@ -48,7 +48,11 @@ export default {
       type: Object,
       required: true
     },
-    name: {
+    legend: {
+      type: Object,
+      required: true
+    },
+    /*name: {
       type: String,
       required: true
     },
@@ -63,7 +67,7 @@ export default {
     number: {
       type: String,
       default: ''
-    },
+    },*/
     cardType: {
       type: String,
       default: 'edit'
