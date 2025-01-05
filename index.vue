@@ -4,8 +4,8 @@
       <!--<div class="left_number">{{ number }}</div>
       <div class="right_number">{{ number }}</div>-->
       <div class="legend">
-        <div v-if="(legend.type === 'series')" class="series">{{ legend.series }}</div>
-        <div class="name"> <span v-if="(legend.type === 'series')">{{ legend.number }} - </span> {{ legend.name }}</div>
+        <div v-if="(type === 'series')" class="series">{{ series }}</div>
+        <div class="name"> <span v-if="(type === 'series')">{{ number }} - </span> {{ name }}</div>
       </div>
       <div v-if="(cardData.type === 'letter' || cardData.type === 'end')" class="number"
       :class="{ 'single' : cardData.name.length === 1 }"
@@ -52,7 +52,7 @@ export default {
       type: Object,
       required: true
     },
-    /*name: {
+    name: {
       type: String,
       required: true
     },
@@ -67,7 +67,7 @@ export default {
     number: {
       type: String,
       default: ''
-    },*/
+    },
     cardType: {
       type: String,
       default: 'edit'
