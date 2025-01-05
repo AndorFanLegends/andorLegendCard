@@ -111,7 +111,7 @@ export default {
 
 .card .legend {
   position: absolute;
-  width: calc(100% - 60px);
+  width: 100%;
   top: 115px;
   text-align: center;
   font-size: 20px;
@@ -124,11 +124,11 @@ export default {
   font-size: 17px;
   line-height: 1em;
 }
-.card div.name:only-child {
+/*.card div.name:only-child {
   padding-top: 35px;
   margin-top: 35px;
   padding: 0 10px;
-}
+}*/
 .card .legend .series span {
   font-size: 60px;
   line-height: 1em;
