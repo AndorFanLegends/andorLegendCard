@@ -95,7 +95,7 @@ export default {
 }
 
 .left {
-  background-image: url("./assets/mini/left_ohne.png");
+  background-image: url("./assets/mini/left-blank.png");
   background-size: cover;
   height: 100%;
   width: 50%;
@@ -297,7 +297,7 @@ export default {
 }
 
 .card.print :deep(.left) {
-  background-image: url("./assets/full/left_ohne.png");
+  background-image: url("./assets/full/left-blank.png");
   border: 1px dashed black;
   border-right: none;
   left: -1px;
