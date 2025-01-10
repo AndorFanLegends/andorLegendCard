@@ -1,6 +1,6 @@
 <template>
   <div class="card" :class="{ 'print': cardType === 'print', 'app': cardType === 'app' }">
-    <div class="left {{ theme }}" :class="{ 'left_letter': cardData.type === 'letter' || cardData.type === 'end' }" v-if="!(cardType === 'app')">
+    <div :class="left {theme}" :class="{ 'left_letter': cardData.type === 'letter' || cardData.type === 'end' }" v-if="!(cardType === 'app')">
       <!--<div class="left_number">{{ number }}</div>
       <div class="right_number">{{ number }}</div>-->
       <div class="legend">
