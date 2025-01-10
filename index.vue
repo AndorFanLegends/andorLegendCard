@@ -305,7 +305,7 @@ export default {
 
 .card.print :deep(.left_letter) {
   /*background-image: url("./assets/full/left_mit.png");*/
-  background-image: url("./assets/full/left_green.png");
+  background-image: url("./assets/full/left-green.png");
 }
 
 .card.print :deep(.right) {
