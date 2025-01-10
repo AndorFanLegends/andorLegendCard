@@ -112,7 +112,7 @@ export default {
   background-image: url("./assets/full/left-green.png");
 }
 
-.left_letter_blue {
+.left_letter.frostTheme {
   /*background-image: url("./assets/mini/left_mit.png");*/
   background-image: url("./assets/full/left-blue.png");
 }
