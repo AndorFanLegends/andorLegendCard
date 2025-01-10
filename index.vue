@@ -105,12 +105,12 @@ export default {
 
 .left_letter {
   /*background-image: url("./assets/mini/left_mit.png");*/
-  background-image: url("./assets/full/left_green.png");
+  background-image: url("./assets/full/left-green.png");
 }
 
 .left_letter_blue {
   /*background-image: url("./assets/mini/left_mit.png");*/
-  background-image: url("./assets/full/left_blue.png");
+  background-image: url("./assets/full/left-blue.png");
 }
 
 .right {
