@@ -1,6 +1,6 @@
 <template>
     <div class="card" :class="{ 'print': cardType === 'print', 'app': cardType === 'app' }">
-      <div class="left" :class="{ 'left_letter': cardData.type === 'letter' || cardData.type === 'end' }" v-if="!(cardType === 'app')">
+      <div class="left" :class="[{ 'left_letter': cardData.type === 'letter' || cardData.type === 'end' }, theme]" v-if="!(cardType === 'app')">
         <!--<div class="left_number">{{ number }}</div>
         <div class="right_number">{{ number }}</div>-->
         <div class="legend">
@@ -62,6 +62,10 @@ export default {
     cardType: {
       type: String,
       default: 'edit'
+    },
+    theme: {
+      type: String,
+      default: 'classicalTheme'
     }
   },
   methods: {
@@ -94,8 +98,14 @@ export default {
   position: relative;
 }
 
+
 .left_letter {
   background-image: url("./assets/mini/left_mit.png");
+}
+
+.left_letter.frostTheme {
+  /*background-image: url("./assets/mini/left_mit.png");*/
+  background-image: url("./assets/full/left-blue.png");
 }
 
 .card .left_number{
