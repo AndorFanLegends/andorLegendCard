@@ -219,6 +219,10 @@ export default {
   margin-left: -20px;
 }
 
+.right img{
+  width:100%
+}
+
 .card :deep(hr) {
   overflow: visible;
   padding: 0;
