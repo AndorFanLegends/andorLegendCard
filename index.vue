@@ -219,7 +219,7 @@ export default {
   margin-left: -20px;
 }
 
-.right img{
+.card :deep(img) {
   width:100%
 }
 
@@ -252,6 +252,7 @@ export default {
 .card :deep(.marked-andor-img) {
   height: 18px;
   vertical-align: sub;
+  width:auto;
 }
 
 .card :deep(blockquote) {
